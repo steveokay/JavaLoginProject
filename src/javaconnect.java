@@ -18,7 +18,8 @@ public class javaconnect {
     public static Connection connectDB(){
         try{
             Class.forName("org.sqlite.JDBC");
-            Connection conn = DriverManager.getConnection("jdbc:sqlite:C:\\Users\\Stevo\\Documents\\NetBeansProjects\\Project123\\project123.sqlite");
+            Connection conn = DriverManager.getConnection(     //<---connection using sqlite db
+                    "jdbc:sqlite:C:\\Users\\Stevo\\Documents\\NetBeansProjects\\Project123\\project123.sqlite");
             
             //unComment if using mysql
             //Class.forName("com.mysql.jdbc.Driver");
